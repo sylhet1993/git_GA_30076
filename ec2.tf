@@ -70,7 +70,7 @@ resource "aws_instance" "vision_server" {
   }
 }
 
-# EC2 Instance for Bastion
+##EC2 Instance for Bastion test_05_01
 resource "aws_network_interface" "bastion_public" {
   subnet_id   = aws_subnet.dev-bastion.id
   security_groups = [aws_security_group.dev-default.id]
